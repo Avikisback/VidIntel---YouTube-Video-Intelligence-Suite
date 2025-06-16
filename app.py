@@ -37,7 +37,7 @@ if option == "Comments":
             st.success(f"Video ID: {video_id}")
 
             # YouTube API Setup
-            API_KEY = "AIzaSyAWnKXezYWOmHTfC1Ltp-LQqphPvDPo2sk"  
+            API_KEY = "YOUTUBE_API_KEY"  
             YT_URL = "https://www.googleapis.com/youtube/v3/commentThreads"
 
             def get_comments(video_id, api_key, max_comments):
@@ -181,9 +181,7 @@ elif option == "Summarisation":
     st.header("🧠 Transcript Summarisation")
 
     from transformers import pipeline
-
-    # Optional: Load from session state
-    default_text = st.session_state.get("transcript", "")
+    default_text="Paste your transcription here"
 
     transcript_input = st.text_area(
         "Paste or edit the transcript here:",
