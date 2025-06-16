@@ -1,0 +1,7 @@
+streamlit
+transformers
+sentence-transformers
+whisper
+yt_dlp
+googletrans==4.0.0-rc1
+requests
